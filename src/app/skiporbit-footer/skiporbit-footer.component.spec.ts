@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SkiporbitPricingComponent } from './skiporbit-pricing.component';
+import { SkiporbitFooterComponent } from './skiporbit-footer.component';
 
-describe('SkiporbitPricingComponent', () => {
-  let component: SkiporbitPricingComponent;
-  let fixture: ComponentFixture<SkiporbitPricingComponent>;
+describe('SkiporbitFooterComponent', () => {
+  let component: SkiporbitFooterComponent;
+  let fixture: ComponentFixture<SkiporbitFooterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SkiporbitPricingComponent ]
+      declarations: [ SkiporbitFooterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SkiporbitPricingComponent);
+    fixture = TestBed.createComponent(SkiporbitFooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
