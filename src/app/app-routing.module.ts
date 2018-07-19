@@ -7,8 +7,8 @@ import { SkiporbitContactComponent } from './contact/skiporbit-contact/skiporbit
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: SkiporbitHomeComponent },
-  { path: 'packages.html', component: SkiporbitPackagesComponent },
-  { path: 'contact.html', component: SkiporbitContactComponent },
+  { path: 'packages', component: SkiporbitPackagesComponent },
+  { path: 'contact', component: SkiporbitContactComponent },
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
