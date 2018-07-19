@@ -16,6 +16,13 @@ import { SkiporbitHotdealsComponent } from './trip-packages/skiporbit-hotdeals/s
 import { AppRoutingModule } from './/app-routing.module';
 import { SkiporbitHomeComponent } from './skiporbit-home/skiporbit-home.component';
 import { SkiporbitBannerComponent } from './skiporbit-banner/skiporbit-banner.component';
+import { SkiporbitPackagesComponent } from './trip-packages/skiporbit-packages/skiporbit-packages.component';
+import { SkiporbitTodaysHotDealComponent } from './trip-packages/skiporbit-todays-hot-deal/skiporbit-todays-hot-deal.component';
+import { SkiporbitPopularDestinationsPackageComponent } from './trip-packages/skiporbit-popular-destinations/skiporbit-popular-destinations.component';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { SkiporbitContactBannerComponent } from './contact/skiporbit-contact-banner/skiporbit-contact-banner.component';
+import { SkiporbitContactAreaComponent } from './contact/skiporbit-contact-area/skiporbit-contact-area.component';
+import { SkiporbitContactComponent } from './contact/skiporbit-contact/skiporbit-contact.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +37,19 @@ import { SkiporbitBannerComponent } from './skiporbit-banner/skiporbit-banner.co
     SkiporbitFooterComponent,
     SkiporbitHotdealsComponent,
     SkiporbitHomeComponent,
-    SkiporbitBannerComponent
+    SkiporbitBannerComponent,
+    SkiporbitPackagesComponent,
+    SkiporbitTodaysHotDealComponent,
+    SkiporbitPopularDestinationsPackageComponent,
+    SkiporbitContactBannerComponent,
+    SkiporbitContactAreaComponent,
+    SkiporbitContactComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2CarouselamosModule
   ],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }],
   bootstrap: [AppComponent]
