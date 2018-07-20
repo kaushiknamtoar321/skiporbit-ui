@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '../../../node_modules/@angular/platform-browser';
+import { PageTitle } from '../mapper/title';
 
 @Component({
   selector: 'app-skiporbit-home',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkiporbitHomeComponent implements OnInit {
 
-  constructor() { }
+  pageTitle : PageTitle = {
+    name : "SkipOrbit™ - India's leading travel website, Visit popular destinations",
+  };
+  constructor(
+    private title : Title,
+  ) { }
 
   ngOnInit() {
+    this.title.setTitle(this.pageTitle.name);
   }
 
 }
