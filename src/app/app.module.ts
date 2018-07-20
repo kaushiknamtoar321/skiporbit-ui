@@ -22,6 +22,7 @@ import { SkiporbitPopularDestinationsPackageComponent } from './trip-packages/sk
 import { SkiporbitContactBannerComponent } from './contact/skiporbit-contact-banner/skiporbit-contact-banner.component';
 import { SkiporbitContactAreaComponent } from './contact/skiporbit-contact-area/skiporbit-contact-area.component';
 import { SkiporbitContactComponent } from './contact/skiporbit-contact/skiporbit-contact.component';
+import { SkiporbitPackageDetailsComponent } from './trip-packages/skiporbit-package-details/skiporbit-package-details.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { SkiporbitContactComponent } from './contact/skiporbit-contact/skiporbit
     SkiporbitContactBannerComponent,
     SkiporbitContactAreaComponent,
     SkiporbitContactComponent,
+    SkiporbitPackageDetailsComponent,
     
   ],
   imports: [
