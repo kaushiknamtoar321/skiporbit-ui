@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {APP_BASE_HREF} from '@angular/common';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 import { AppComponent } from './app.component';
@@ -51,7 +51,7 @@ import { SkiporbitPackageDetailsComponent } from './trip-packages/skiporbit-pack
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [{provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
