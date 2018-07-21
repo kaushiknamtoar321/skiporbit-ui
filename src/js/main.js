@@ -229,9 +229,9 @@ $(document).ready(function() {
             path = 'index.html';
         }
 
-        var target = $('nav a[href="' + path + '"]');
+        // var target = $('nav a[href="' + path + '"]');
         // Add active class to target link
-        target.addClass('menu-active');
+        // target.addClass('menu-active');
     });
 
     $(document).ready(function() {
